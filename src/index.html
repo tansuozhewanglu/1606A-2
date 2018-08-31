@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <i class="icon iconfont icon-xiangzuo tu1"></i>
+            <h3>无连接</h3>
+            <i class="icon iconfont icon-gengduo-2 tu2"></i>
+            <img src="img/IMG_0912_03.jpg" class="tu3">
+        </header>
+        <section class="section">
+            <ul class="list">
+                <li class="active">
+                    <img src="img/IMG_0912_07.jpg" alt="">
+                    <span>电源</span>
+                </li>
+                <li>
+                    <img src="img/IMG_0912_09.jpg" alt="">
+                    <span>首页</span>
+                </li>
+                <li>
+                    <img src="img/IMG_0912_11.jpg" alt="">
+                    <span>菜单</span>
+                </li>
+                <li>
+                    <img src="img/IMG_0912_13.jpg" alt="">
+                    <span>截屏</span>
+                </li>
+            </ul>
+            <div class="neirong">
+                <div>第一页</div>
+                <div>第二页</div>
+                <div>第三页</div>
+                <div>第四页</div>
+            </div>
+            <div class="fot">
+                <img src="img/IMG_0912_20.jpg" alt="">
+            </div>
+        </section>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $('.list li').on('click', function() {
+            var ind = $(this).index();
+            $(this).addClass('active').siblings().removeClass('active');
+            $('.neirong>div').eq(ind).show().siblings().hide();
+        })
+    </script>
+</body>
+
+</html>

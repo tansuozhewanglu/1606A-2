@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background: #eee;
+}
+
+.header tu1 {
+    position: absolute;
+    left: 10px;
+}
+
+.header tu2 {
+    position: absolute;
+    right: 40px;
+}
+
+.header img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    padding-top: 10px;
+}
+
+.section .list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.section .list li {
+    width: 25%;
+    height: auto;
+}
+
+.section .list li img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.section .list li span {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.section .neirong {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.section .neirong>div {
+    width: 100%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 200px;
+}
+
+.section .fot {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.section .fot img {
+    width: 50px;
+    height: 50px;
+}
